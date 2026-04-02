@@ -1,0 +1,482 @@
+﻿@page "/"
+
+<section id="top" class="hero">
+    <h1>Matheus Cruz</h1>
+    <h2>Software Engineer</h2>
+
+    <p class="desc">
+        Construindo experiências digitais elegantes e performáticas com C# e .NET.
+    </p>
+
+    <div class="buttons">
+        <a href="#projetos" class="primary">Ver Projetos</a>
+        <a href="#contato" class="secondary">Entrar em Contato</a>
+    </div>
+
+    <button class="play" @onclick="OpenGame">
+        Jogar
+    </button>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section">
+    <h2>Sobre</h2>
+
+    <p>
+        Matheus Vinicius Da Cruz (Matheus Lastoria), profissional de TI com experiência em suporte técnico N1/N2,
+        atuando na resolução e análise de problemas e atendimento a usuários em ambientes corporativos.
+    </p>
+
+    <p>
+        Atualmente venho aprofundando meus estudos em Desenvolvimento Backend, com foco em .NET,
+        APIs REST, bancos de dados SQL e computação em nuvem (Azure).
+    </p>
+
+    <p>
+        Tenho desenvolvido projetos próprios voltados para arquitetura de APIs, boas práticas de código,
+        testes automatizados e aplicações em cloud, buscando unir minha experiência em ambientes
+        corporativos de TI ao desenvolvimento de soluções escaláveis e bem estruturadas.
+    </p>
+
+    <h3 class="tech-title">Tecnologias</h3>
+
+    <div class="tech-list">
+        <span class="tech-item">C#</span>
+        <span class="tech-item">.NET</span>
+        <span class="tech-item">API REST</span>
+        <span class="tech-item">SQL Server</span>
+        <span class="tech-item">Entity Framework</span>
+        <span class="tech-item">Azure</span>
+        <span class="tech-item">Git</span>
+        <span class="tech-item">N1/N2</span>
+        <span class="tech-item">GameMaker</span>
+        <span class="tech-item">Solidworks</span>
+    </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos" class="section">
+    <h2>Projetos</h2>
+
+    <div class="projects-grid">
+
+        <!-- Projeto Terra -->
+        <div class="project-card">
+            <div class="project-image clickable-image" @onclick='() => OpenGallery(projetoTerraImages, 0)'>
+                <img src="/images/projeto-terra.jpg" alt="Projeto Terra" />
+
+                <button class="expand-button" @onclick:stopPropagation="true" @onclick='() => OpenGallery(projetoTerraImages, 0)'>
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+
+            <div class="project-content">
+                <h3>Projeto Terra (Desktop)</h3>
+
+                <p>
+                    Jogo educativo desenvolvido para ações de sustentabilidade,
+                    aplicado em escolas e eventos acadêmicos para conscientização
+                    ambiental de forma interativa.
+                </p>
+
+                <div class="project-tags">
+                    <span>GameMaker</span>
+                    <span>GML</span>
+                    <span>HTML5</span>
+                    <span>Educação</span>
+                </div>
+
+                <a href="https://github.com/MatheusLastoria/ProjetoTerra"
+                   target="_blank"
+                   class="project-button">
+                    Ver Projeto
+                </a>
+            </div>
+        </div>
+
+        <!-- Projeto Detetive -->
+        <div class="project-card">
+            <div class="project-image clickable-image" @onclick='() => OpenGallery(detetiveImages, 0)'>
+                <img src="/images/detetive-toxicologico.jpg" alt="Projeto Detetive Toxicológico" />
+
+                <button class="expand-button" @onclick:stopPropagation="true" @onclick='() => OpenGallery(detetiveImages, 0)'>
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+
+            <div class="project-content">
+                <h3>Detetive Toxicológico (Android)</h3>
+
+                <p>
+                    Jogo educativo criado para apoiar projetos da área de
+                    Biomedicina, ajudando a transmitir conceitos científicos
+                    de forma acessível e lúdica.
+                </p>
+
+                <div class="project-tags">
+                    <span>GameMaker</span>
+                    <span>GML</span>
+                    <span>Android</span>
+                    <span>Biomedicina</span>
+                    <span>Educação</span>
+                </div>
+
+                <a href="https://github.com/MatheusLastoria/Detetive-Toxicol-gico/tree/main"
+                   class="project-button">
+                    Ver Projeto
+                </a>
+            </div>
+        </div>
+
+        <!-- Projeto Resgate Natalino -->
+        <div class="project-card">
+            <div class="project-image clickable-image" @onclick='() => OpenGallery(resgateNatalinoImages, 0)'>
+                <img src="/images/resgate-natalino.jpg" alt="Projeto Resgate Natalino" />
+
+                <button class="expand-button" @onclick:stopPropagation="true" @onclick='() => OpenGallery(resgateNatalinoImages, 0)'>
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+
+            <div class="project-content">
+                <h3>Resgate Natalino (Desktop) (PT-BR / EN-US)</h3>
+
+                <p>
+                    Projeto desenvolvido para Gameoff com o tema "Surpresa",
+                    explorando mecânicas divertidas e uma proposta temática
+                    voltada ao período natalino.
+                </p>
+
+                <div class="project-tags">
+                    <span>GameMaker</span>
+                    <span>GML</span>
+                    <span>Game Design</span>
+                    <span>Projeto GameJam</span>
+                    <span>Projeto Acadêmico</span>
+                </div>
+
+                <a href="https://github.com/MatheusLastoria/ResgateNatalino" class="project-button">Ver Projeto</a>
+            </div>
+        </div>
+
+        <!-- Projeto Bandoletes -->
+        <div class="project-card">
+            <div class="project-image clickable-image" @onclick='() => OpenGallery(bandoletesImages, 0)'>
+                <img src="/images/bandoletes.jpg" alt="Projeto Bandoletes" />
+
+                <button class="expand-button" @onclick:stopPropagation="true" @onclick='() => OpenGallery(bandoletesImages, 0)'>
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+
+            <div class="project-content">
+                <h3>Projeto Bandoletes (em desenvolvimento)</h3>
+
+                <p>
+                    Projeto experimental em desenvolvimento desde o início do ano, focado na criação de um
+                    pequeno ecossistema artificial. O jogo funciona como um simulador de vida artificial,
+                    onde os "Bandoletes" possuem comportamentos próprios e evoluem dentro de um ambiente
+                    dinâmico.
+                </p>
+
+                <p>
+                    A proposta não é que o jogador controle diretamente os personagens, mas sim observe
+                    como eles vivem, interagem e se desenvolvem ao longo do tempo, podendo apenas realizar
+                    pequenas intervenções no ambiente.
+                </p>
+
+                <p>
+                    O nome do projeto é inspirado no episódio “Toy”, da série Black Mirror a inspiração serve apenas como referência conceitual
+                    para criar criaturas que pareçam o mais vivas e autônomas possível. [fiz uma versão jogavel e adaptada no portfólio, jogue ele]
+                </p>
+
+                <div class="project-tags">
+                    <span>C#</span>
+                    <span>.NET</span>
+                    <span>Projeto Pessoal</span>
+                    <span>Estudo</span>
+                </div>
+
+                <a href="#" class="project-button">Ver Projeto</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section id="experiencia" class="section experience-modern">
+    <h2>Experiência</h2>
+
+    <div class="experience-timeline">
+
+        <div class="experience-item">
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>AUTONOMO - Suporte técnico</h3>
+                    </div>
+
+                    <span class="experience-date">JUN 2023 - PRESENTE</span>
+                </div>
+
+                <ul class="experience-description">
+                    <li>Atuação em suporte técnico a aplicações de streaming baseadas em rede IP, realizando análise de conectividade, estabilidade, latência, configuração de dispositivos e resolução estruturada de falhas técnicas.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>COMPSOFT - Suporte Técnico</h3>
+                    </div>
+
+                    <span class="experience-date">OUT 2022 - JAN 2023</span>
+                </div>
+
+                <ul class="experience-description">
+                    <li>Atuação em ambientes corporativos com instalação, configuração e suporte a sistemas e bancos de dados, incluindo implantação de soluções para o varejo e suporte a dados com IBExpert.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>ABC Technology - Suporte de Produção</h3>
+                    </div>
+
+                    <span class="experience-date">ABR 2022 - OUT 2022</span>
+                </div>
+
+                <ul class="experience-description">
+                    <li>Apontamento de perdas em peças refugadas e injetadas dentro do sistema Protheus.</li>
+                    <li>Controle de estoque e solicitação de compra via Protheus / fornecedor.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>E.E. Dr. Cesário Coimbra - T.I</h3>
+                    </div>
+
+                    <span class="experience-date">FEV 2018 - DEZ 2019</span>
+                </div>
+
+                <ul class="experience-description">
+                    <li>Reparos e instalações de rede.</li>
+                    <li>Manutenção de computadores servidores.</li>
+                    <li>Auxiliar de tarefas no laboratório de informática e atividades administrativas.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-section-title">
+            <span>Educação</span>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>FUNDAÇÃO HERMINIO OMETTO</h3>
+                    </div>
+
+                    <span class="experience-date">JAN 2021 - DEZ 2024</span>
+                </div>
+
+                <ul class="experience-description">
+                    <li>Engenharia da computação</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>UNICESUMAR</h3>
+                    </div>
+
+                    <span class="experience-date">JAN 2025 - Presente</span>
+                </div>
+
+                <ul class="experience-description">
+                    <li>Técnico em desenvolvimento de sistemas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>UDEMY</h3>
+                    </div>
+
+                    <span class="experience-date">JAN 2025 - JAN 2025</span>
+                </div>
+
+                <ul class="experience-description">
+                    <li>Suporte Técnico na prática - Certificado</li>
+                </ul>
+            </div>
+        </div>
+
+         
+
+    </div>
+</section>
+
+
+
+
+<!-- CONTATO -->
+<section id="contato" class="contato-bloco">
+    <div class="section contato-conteudo">
+        <h2>Contato</h2>
+
+        <div class="social-links">
+            <a href="https://github.com/MatheusLastoria" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/matheus-da-cruz/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:matheusviniciusdacruz@hotmail.com?subject=Contato pelo Portfólio&body=Olá Matheus, gostaria de falar sobre...">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://www.instagram.com/matheuslastoria/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/5519989384050" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+</section>
+@if (showLightbox && currentGallery.Count > 0)
+{
+    <div class="lightbox-backdrop" @onclick="CloseGallery">
+        <div class="lightbox-modal" @onclick:stopPropagation="true">
+            <button class="lightbox-close" @onclick="CloseGallery">×</button>
+            <button class="lightbox-nav prev" @onclick="PrevImage">❮</button>
+
+            <div class="lightbox-image-wrapper">
+                <img src="@currentGallery[currentImageIndex]"
+                     alt="Imagem ampliada"
+                     class="lightbox-image" />
+            </div>
+
+            <button class="lightbox-nav next" @onclick="NextImage">❯</button>
+        </div>
+    </div>
+}
+
+@if (showGame)
+{
+    <div class="game-backdrop" @onclick="CloseGame">
+        <div class="game-modal" @onclick:stopPropagation="true">
+            <button class="game-close" @onclick="CloseGame">&times;</button>
+            <iframe src="/games/resgatenatalino/index.html"></iframe>
+        </div>
+    </div>
+}
+
+@code {
+    private bool showLightbox = false;
+    private List<string> currentGallery = new();
+    private int currentImageIndex = 0;
+
+    private readonly List<string> projetoTerraImages = new()
+    {
+        "/images/projeto-terra.jpg",
+        "/images/projeto-terra-2.jpg",
+        "/images/projeto-terra-3.jpg",
+        "/images/projeto-terra-4.jpg",
+        "/images/projeto-terra-5.jpg",
+        "/images/projeto-terra-6.jpg",
+        "/images/projeto-terra-7.jpg"
+    };
+
+    private readonly List<string> detetiveImages = new()
+    {
+        "/images/detetive-toxicologico.jpg",
+        "/images/detetive-toxicologico-2.jpg",
+        "/images/detetive-toxicologico-3.jpg",
+        "/images/detetive-toxicologico-4.jpg",
+        "/images/detetive-toxicologico-5.jpg"
+    };
+
+    private readonly List<string> resgateNatalinoImages = new()
+    {
+        "/images/resgate-natalino.jpg",
+        "/images/resgate-natalino2.jpg",
+        "/images/resgate-natalino3.jpg"
+    };
+
+    private readonly List<string> bandoletesImages = new()
+    {
+        "/images/bandoletes.jpg"
+    };
+
+    private void OpenGallery(List<string> gallery, int startIndex)
+    {
+        currentGallery = gallery;
+        currentImageIndex = startIndex;
+        showLightbox = true;
+    }
+
+    private void CloseGallery()
+    {
+        showLightbox = false;
+    }
+
+    private void NextImage()
+    {
+        if (currentGallery.Count == 0) return;
+        currentImageIndex = (currentImageIndex + 1) % currentGallery.Count;
+    }
+
+    private void PrevImage()
+    {
+        if (currentGallery.Count == 0) return;
+        currentImageIndex = (currentImageIndex - 1 + currentGallery.Count) % currentGallery.Count;
+    }
+
+    private bool showGame = false;
+
+    private void OpenGame()
+    {
+        showGame = true;
+    }
+
+    private void CloseGame()
+    {
+        showGame = false;
+    }
+}

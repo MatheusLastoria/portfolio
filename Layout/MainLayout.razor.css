@@ -1,0 +1,92 @@
+.page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* remove completamente estilos do template antigo */
+.sidebar{
+    display:none;
+}
+
+.top-row{
+    display:none;
+}
+
+/* área principal */
+main{
+    flex:1;
+    background-color:#0d0d0d;
+}
+
+/* conteúdo abaixo da navbar */
+.content{
+    padding-top:80px;
+}
+
+/* NAVBAR */
+
+.topbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#0d0d0d;
+    border-bottom:1px solid #222;
+    z-index:100;
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 40px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#d4af37;
+}
+
+.menu a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#aaa;
+}
+
+.menu a:hover{
+    color:white;
+}
+
+.actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.icon{
+    background:#1c1c1c;
+    border:none;
+    padding:8px;
+    border-radius:8px;
+}
+
+.lang{
+    background:#1c1c1c;
+    padding:5px 10px;
+    border-radius:20px;
+}
+
+.lang span{
+    margin:0 5px;
+}
+
+.lang .active{
+    background:white;
+    color:black;
+    padding:2px 8px;
+    border-radius:10px;
+}
+
+ 

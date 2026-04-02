@@ -1,0 +1,92 @@
+.page[b-o7twkeyr59]{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* remove completamente estilos do template antigo */
+.sidebar[b-o7twkeyr59]{
+    display:none;
+}
+
+.top-row[b-o7twkeyr59]{
+    display:none;
+}
+
+/* área principal */
+main[b-o7twkeyr59]{
+    flex:1;
+    background-color:#0d0d0d;
+}
+
+/* conteúdo abaixo da navbar */
+.content[b-o7twkeyr59]{
+    padding-top:80px;
+}
+
+/* NAVBAR */
+
+.topbar[b-o7twkeyr59]{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#0d0d0d;
+    border-bottom:1px solid #222;
+    z-index:100;
+}
+
+.container[b-o7twkeyr59]{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 40px;
+}
+
+.logo[b-o7twkeyr59]{
+    font-size:28px;
+    font-weight:bold;
+    color:#d4af37;
+}
+
+.menu a[b-o7twkeyr59]{
+    margin:0 15px;
+    text-decoration:none;
+    color:#aaa;
+}
+
+.menu a:hover[b-o7twkeyr59]{
+    color:white;
+}
+
+.actions[b-o7twkeyr59]{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.icon[b-o7twkeyr59]{
+    background:#1c1c1c;
+    border:none;
+    padding:8px;
+    border-radius:8px;
+}
+
+.lang[b-o7twkeyr59]{
+    background:#1c1c1c;
+    padding:5px 10px;
+    border-radius:20px;
+}
+
+.lang span[b-o7twkeyr59]{
+    margin:0 5px;
+}
+
+.lang .active[b-o7twkeyr59]{
+    background:white;
+    color:black;
+    padding:2px 8px;
+    border-radius:10px;
+}
+
+ 
