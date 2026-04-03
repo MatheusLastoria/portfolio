@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gf74j8RHA50=",
+  "dgSpecHash": "8uJ15wcjgVA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\Desktop\\pessoal matheus\\portifolio\\portfolio\\portfolio.csproj",
+  "projectFilePath": "C:\\Users\\usuario\\Desktop\\aa2\\portfolio\\portfolio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.2\\microsoft.aspnetcore.app.internal.assets.10.0.2.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.authorization\\10.0.2\\microsoft.aspnetcore.authorization.10.0.2.nupkg.sha512",

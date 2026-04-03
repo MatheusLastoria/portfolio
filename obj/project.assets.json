@@ -2141,11 +2141,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\Desktop\\pessoal matheus\\portifolio\\portfolio\\portfolio.csproj",
+      "projectUniqueName": "C:\\Users\\usuario\\Desktop\\aa2\\portfolio\\portfolio.csproj",
       "projectName": "portfolio",
-      "projectPath": "C:\\Users\\usuario\\Desktop\\pessoal matheus\\portifolio\\portfolio\\portfolio.csproj",
+      "projectPath": "C:\\Users\\usuario\\Desktop\\aa2\\portfolio\\portfolio.csproj",
       "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\Desktop\\pessoal matheus\\portifolio\\portfolio\\obj\\",
+      "outputPath": "C:\\Users\\usuario\\Desktop\\aa2\\portfolio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
