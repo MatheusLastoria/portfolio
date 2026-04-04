@@ -1,0 +1,23 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - wget https://dot.net/v1/dotnet-install.sh
+        - bash dotnet-install.sh --channel 10.0
+        - export PATH="$HOME/.dotnet:$PATH"
+        - dotnet --info
+        - dotnet restore "portfolio.csproj"
+    build:
+      commands:
+        - export PATH="$HOME/.dotnet:$PATH"
+        - dotnet publish "portfolio.csproj" -c Release -o publish
+        - ls -la publish
+        - ls -la publish/wwwroot
+  artifacts:
+    baseDirectory: publish/wwwroot
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .nuget/packages/**/*
